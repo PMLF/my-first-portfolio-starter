@@ -1,0 +1,47 @@
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #f9faff;
+  --color-text-primary: #828282;
+  --color-text-secondary: #333333;
+  --color-primary: #928DF1;
+  --color-secondary: #FDC435;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-text-secondary);
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+.instagram {
+  background-image: url('assets/social/github.png');
+}
