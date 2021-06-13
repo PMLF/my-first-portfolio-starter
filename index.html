@@ -17,18 +17,18 @@
     <meta property="og:description" content="My Cool Portfolio" />
 
     <!-- import bootstrap library-->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
-    /> -->
+    />
 
     <!-- import font-->
-    <!-- <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
-    /> -->
+    />
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css" />
@@ -63,8 +63,8 @@
               focused on crafting great web experiences by keeping present UX/UI
               best practices
             </p>
-            <a class="button button-primary"> Github </a>
-            <a class="button button-secondary"> LinkedIn </a>
+            <a href="" class="button button-primary"> Github </a>
+            <a href="" class="button button-secondary"> LinkedIn </a>
           </div>
           <div class="col-sm-12 col-md-6">
             <img
@@ -79,12 +79,12 @@
           <div class="col-12">
             <h2 class="heading">About me</h2>
           </div>
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-lg-6">
             <div class="about-img">
               <img src="assets/mariaalbertina.jpg" alt="" />
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 d-flex align-items-center">
+          <div class="col-sm-12 col-lg-6 d-flex align-items-center">
             <p class="about-text">
               Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis
               tortor neque auctor dis ipsum. Pretium cras amet odio amet
@@ -160,17 +160,19 @@
           </div>
           <div class="row">
             <div class="col-sm-12 col-md-8 offset-md-2">
-              <!-- <p>
-                💌 Feel free to get in touch with me by <a href="mailto:monica.mofi@gmail.com">Email</a> 💌
-              </p> -->
-              <form>
+              <p>
+                💌 Feel free to get in touch with me by
+                <a href="mailto:vossoemailaqui">Email</a> 💌
+              </p>
+              <form action="mailto:vossoemailaqui" method="post">
                 <div class="form-group">
                   <label for="inputName">Name</label>
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
                     id="inputName"
-                    placeholder="Enter email"
+                    placeholder="Enter your name"
+                    name="name"
                   />
                 </div>
                 <div class="form-group">
@@ -180,6 +182,7 @@
                     class="form-control"
                     id="exampleInputEmail1"
                     placeholder="Enter email"
+                    name="email"
                   />
                 </div>
                 <div class="form-group">
@@ -188,6 +191,7 @@
                     class="form-control"
                     id="exampleFormControlTextarea1"
                     rows="3"
+                    name="text"
                   ></textarea>
                 </div>
                 <div class="text-right">
