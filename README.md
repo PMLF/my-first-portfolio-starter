@@ -19,6 +19,15 @@ this is a basic portfolio HTML starter, missing the styles. It already has asset
 
 <br />
 
+## How does the final project should look like? 👩‍💻
+
+You are free to change images, colors and text, but the final goal is to have something similar to this:
+
+<img alt="Demo" src="assets/portfolio-img.png" />
+  
+<p></p>
+<br />
+
 ## What does this project use? 👀
 
 - [Bootstrap](https://getbootstrap.com/): a popular CSS Framework for developing responsive and mobile-first websites
