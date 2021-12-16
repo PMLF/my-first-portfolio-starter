@@ -90,3 +90,19 @@ h2 {
 	transform: scale(1.1);
 	transition: all 0.4s;
 }
+
+.languageButton {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 20px;
+	right: 100px;
+	background-size: 100%;
+	background-image: url("./assets/translations/pt.png");
+}
+
+.languageButton:hover {
+	transform: scale(1.1);
+	transition: all 0.4s;
+}
