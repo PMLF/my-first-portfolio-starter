@@ -6,19 +6,30 @@ console.log("Hello 🌎");
 
 let isDarkTheme = false;
 
+const body = document.querySelector("body");
+const textToChangeColor = document.querySelectorAll(
+	".title, .intro div p, .heading, .project-card-content h3, .project-card-content p"
+);
+const themeButton = document.querySelector(".themeButton");
+
 function toggleDarkTheme() {
 	if (isDarkTheme) {
-	} else {
-		document.querySelector("body").style.backgroundColor = "#333333";
+		body.style.backgroundColor = "#f9faff";
 
-		let textToChangeColor = document.querySelectorAll(
-			".title, .intro div p, .heading, .project-card-content h3, .project-card-content p"
-		);
+		for (let i = 0; i < textToChangeColor.length; i++) {
+			textToChangeColor[i].style.color = "#333333";
+		}
+
+		themeButton.style.backgroundImage = "url('./assets/themes/dark.png')";
+		isDarkTheme = false;
+	} else {
+		body.style.backgroundColor = "#333333";
 
 		for (let i = 0; i < textToChangeColor.length; i++) {
 			textToChangeColor[i].style.color = "#f9faff";
 		}
+
+		themeButton.style.backgroundImage = "url('./assets/themes/light.png')";
+		isDarkTheme = true;
 	}
 }
-
-toggleDarkTheme();

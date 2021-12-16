@@ -26,9 +26,6 @@ body {
 	color: var(--color-text-primary);
 	background-color: var(--color-bg);
 	margin: 0;
-
-	/* dark theme */
-	/* background-color: var(--color-bg-dark); */
 }
 
 h1,
@@ -78,10 +75,18 @@ h2 {
 	padding: 40px 0;
 }
 
-/* .title,
-.intro div p,
-.heading,
-.project-card-content h3,
-.project-card-content p {
-	color: var(--color-bg);
-} */
+.themeButton {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-size: 100%;
+	background-image: url("./assets/themes/dark.png");
+}
+
+.themeButton:hover {
+	transform: scale(1.1);
+	transition: all 0.4s;
+}
